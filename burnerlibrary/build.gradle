@@ -45,7 +45,7 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            library(MavenPublication){
+            release(MavenPublication){
 
                 groupId = 'com.github.AppPhoenixShell'
                 artifactId = 'xyz.cloudcoffee.modburner'
