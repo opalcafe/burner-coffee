@@ -55,7 +55,12 @@ afterEvaluate {
 
                 groupId = 'com.github.AppPhoenixShell'
                 artifactId = 'xyz.cloudcoffee.burner'
-                version = '1.0'
+                version = '1.1'
+            }
+            debug(MavenPublication){
+                groupId = 'com.github.AppPhoenixShell'
+                artifactId = 'xyz.cloudcoffee.burner-alpha-1.0'
+                version = '1.1'
             }
         }
     }
