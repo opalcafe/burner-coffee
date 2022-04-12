@@ -51,11 +51,6 @@ afterEvaluate {
                 groupId = 'com.github.appphoenixshell'
                 artifactId = 'xyz.cloudcoffee.mymodburner'
                 version = '1.6'
-
-                artifact("$buildDir/outputs/aar/burnerlibrary-release.aar") {
-                    builtBy assembleRelease
-                }
-
             }
         }
     }
