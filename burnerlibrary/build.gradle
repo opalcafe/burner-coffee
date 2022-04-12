@@ -46,10 +46,14 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication){
-
                 groupId = 'com.github.AppPhoenixShell'
                 artifactId = 'xyz.cloudcoffee.modburner'
                 version = '1.4'
+
+                artifact("$buildDir/outputs/aar/burnerlibrary-release.aar") {
+                    builtBy assembleRelease
+                }
+
             }
         }
     }
